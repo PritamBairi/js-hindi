@@ -19,7 +19,7 @@ const bigNumber = 32366767564983575978547854n;
 console.log(typeof bigNumber);
 
 
-// Reference(Non Primitive) data types
+// Reference(Non-Primitive) data types
 
 // Array, Object, Function
 
@@ -34,3 +34,30 @@ let myObj = {
 const myFunction = function(){
     console.log("Hello World");
 }
+
+
+
+
+// Stack(Primitive), Heap (Non-Primitive)
+
+
+let userName = "Pritam";
+let anotherUserName = userName;
+anotherUserName = "Sourav";
+
+console.log(userName);
+console.log(anotherUserName);
+
+
+let userOne = {
+    name: "Pritam",
+    email: "pritam@gmail.com",
+}
+
+
+let userTwo = userOne;
+
+userTwo.email = "pritam20@gmail.com";
+
+console.log(userOne);
+console.log(userTwo);
