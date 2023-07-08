@@ -18,7 +18,7 @@ const regularUser = {
 
 }
 
-console.log(regularUser.fullname.userFullname.firstName);
+// console.log(regularUser.fullname.userFullname.firstName);
 
 
 const obj1 = {1: "a",2: "b"}
@@ -30,8 +30,20 @@ const obj3 = {...obj1, ...obj2};
 
 // console.log(obj3);
 
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
 
-console.log(tinderUser.hasOwnProperty("id"));
+// console.log(tinderUser.hasOwnProperty("id"));
+
+
+
+const course = {
+    name: "js in hindi",
+    price: "999",
+    courseInstructor: "Hitesh"
+}
+
+const {courseInstructor: instructor} = course;
+
+console.log(instructor);
